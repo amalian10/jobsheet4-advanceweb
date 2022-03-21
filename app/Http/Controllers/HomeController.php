@@ -14,8 +14,11 @@ class HomeController extends Controller
         ->with('abouts',About::about())
         ;
     }
-
     
+    public function howitworks() {
+        return view('howitworks')
+        ->with('howitworkes',Howitworks::howitworks());
+    }
 
     public function cooming() {
         return view('cooming');
